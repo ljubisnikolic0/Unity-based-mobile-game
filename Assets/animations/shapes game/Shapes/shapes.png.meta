@@ -1,0 +1,698 @@
+fileFormatVersion: 2
+guid: 4818134afb83d4c1db32f2b43949fdaa
+timeCreated: 1484268788
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Circle_Blue
+    21300002: Circle_green
+    21300004: Circle_Orange
+    21300006: Circle_red
+    21300008: Circle_yellow
+    21300010: Diamond_Blue
+    21300012: Diamond_green
+    21300014: Diamond_orange
+    21300016: Diamond_red
+    21300018: Diamond_Yellow
+    21300020: Heart_blue
+    21300022: Heart_green
+    21300024: Heart_orange
+    21300026: Heart_red
+    21300028: Heart_yellow
+    21300030: Hex_blue
+    21300032: Hex_green
+    21300034: Hex_Orange
+    21300036: Hex_red
+    21300038: Hex_Yellow
+    21300040: Rectangle_blue
+    21300042: Rectangle_green
+    21300044: Rectangle_Orange
+    21300046: Rectangle_red
+    21300048: Rectangle_yellow
+    21300050: Square_blue
+    21300052: Square_green
+    21300054: Square_orange
+    21300056: Square_red
+    21300058: Square_yellow
+    21300060: Star_blue
+    21300062: Star_green
+    21300064: Star_orange
+    21300066: Star_red
+    21300068: Star_yellow
+    21300070: Triangle_blue
+    21300072: Triangle_green
+    21300074: Triangle_orange
+    21300076: Triangle_red
+    21300078: Triangle_Yellow
+    21300080: Octo_Blue
+    21300082: Octo_Green
+    21300084: Octo_Orange
+    21300086: Octo_Red
+    21300088: Octo_Yellow
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Circle_Blue
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 340
+        width: 81
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5060241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Circle_green
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 334
+        width: 81
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5060241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Circle_Orange
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 337
+        width: 81
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5060241}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Circle_red
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 397
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Circle_yellow
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 341
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Diamond_Blue
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 680
+        width: 72
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50549453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Diamond_green
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 246
+        width: 71
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5070422, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Diamond_orange
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 304
+        width: 72
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50549453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Diamond_red
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 248
+        width: 72
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50549453}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Diamond_Yellow
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 773
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Heart_blue
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 676
+        width: 90
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53246754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Heart_green
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 598
+        width: 89
+        height: 79
+      alignment: 9
+      pivot: {x: 0.49438202, y: 0.51898736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Heart_orange
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 595
+        width: 89
+        height: 79
+      alignment: 9
+      pivot: {x: 0.49438202, y: 0.51898736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Heart_red
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 601
+        width: 90
+        height: 77
+      alignment: 9
+      pivot: {x: 0.5, y: 0.53246754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Heart_yellow
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 591
+        width: 89
+        height: 77
+      alignment: 9
+      pivot: {x: 0.505618, y: 0.53246754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hex_blue
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 679
+        width: 96
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5104167, y: 0.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hex_green
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 670
+        width: 96
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5104167, y: 0.5232558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hex_Orange
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 758
+        width: 96
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5104167, y: 0.5232558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hex_red
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 657
+        width: 96
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5104167, y: 0.5232558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hex_Yellow
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 755
+        width: 96
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5104167, y: 0.5232558}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Octo_Blue
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 568
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Octo_Green
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 512
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Octo_Orange
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 509
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Octo_Red
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 506
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Octo_Yellow
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 502
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle_blue
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 225
+        width: 67
+        height: 110
+      alignment: 9
+      pivot: {x: 0.48507464, y: 0.54545456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle_green
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 222
+        width: 67
+        height: 110
+      alignment: 9
+      pivot: {x: 0.47014925, y: 0.5272727}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle_Orange
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 229
+        width: 66
+        height: 110
+      alignment: 9
+      pivot: {x: 0.47727272, y: 0.5181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle_red
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 137
+        width: 66
+        height: 109
+      alignment: 9
+      pivot: {x: 0.49242425, y: 0.51376146}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rectangle_yellow
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 193
+        width: 67
+        height: 109
+      alignment: 9
+      pivot: {x: 0.47014925, y: 0.5321101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Square_blue
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 419
+        width: 83
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5180723, y: 0.52469134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Square_green
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 483
+        width: 84
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5119048, y: 0.5120482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Square_orange
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 427
+        width: 83
+        height: 83
+      alignment: 9
+      pivot: {x: 0.4939759, y: 0.5120482}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Square_red
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 425
+        width: 83
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5180723, y: 0.51829267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Square_yellow
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 422
+        width: 83
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5060241, y: 0.51829267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star_blue
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 846
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star_green
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 846
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star_orange
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 843
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star_red
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 766
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Star_yellow
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 745
+        width: 106
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Triangle_blue
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 948
+        width: 118
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Triangle_green
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 947
+        width: 119
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5042017, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Triangle_orange
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 944
+        width: 118
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49367088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Triangle_red
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 867
+        width: 117
+        height: 79
+      alignment: 9
+      pivot: {x: 0.50427353, y: 0.49367088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Triangle_Yellow
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 947
+        width: 119
+        height: 76
+      alignment: 9
+      pivot: {x: 0.5042017, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

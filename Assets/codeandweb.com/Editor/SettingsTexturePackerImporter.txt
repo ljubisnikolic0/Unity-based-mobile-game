@@ -2,13 +2,49 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/animations/EaselAnimations/FireTruck/Animation_Sequences/fireTruck.tpsheet
+- Assets/animations/EaselAnimations/Lion/Animation_Sequences/lion.tpsheet
 - Assets/animations/EaselAnimations/ShoolBus/Animation_Sequences/schoolBus.tpsheet
+- Assets/animations/EaselAnimations/Train/Animation_Sequences/train.tpsheet
+- Assets/animations/EaselAnimations/Train/Animation_Sequences/train_fireworks.tpsheet
+- Assets/animations/EaselAnimations/Train/Animation_Sequences/train_moving.tpsheet
+- Assets/animations/puzzle game/puzzles/beach/Animation_Sequences/puzzle_beach.tpsheet
+- Assets/animations/puzzle game/puzzles/fire_fighter/Animation_Sequences/puzzle_fireFighter.tpsheet
+- Assets/animations/puzzle game/puzzles/safari/Animation_Sequences/puzzle_safari.tpsheet
+- Assets/animations/puzzle game/puzzles/underwater/Animation_Sequences/puzzle_underwater.tpsheet
+- Assets/animations/puzzle game/Yancy/Animation_Sequences/yancyComplete.tpsheet
+- Assets/animations/puzzle game/Yancy/Animation_Sequences/yancyCorrect.tpsheet
+- Assets/animations/puzzle game/Yancy/Animation_Sequences/yancyWrong.tpsheet
+- Assets/animations/shapes game/Shapes/shapes.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 textureFileNames:
 - Assets/animations/EaselAnimations/FireTruck/Animation_Sequences/fireTruck.png
+- Assets/animations/EaselAnimations/Lion/Animation_Sequences/lion.png
 - Assets/animations/EaselAnimations/ShoolBus/Animation_Sequences/schoolBus.png
+- Assets/animations/EaselAnimations/Train/Animation_Sequences/train.png
+- Assets/animations/EaselAnimations/Train/Animation_Sequences/train_fireworks.png
+- Assets/animations/EaselAnimations/Train/Animation_Sequences/train_moving.png
+- Assets/animations/puzzle game/puzzles/beach/Animation_Sequences/puzzle_beach.png
+- Assets/animations/puzzle game/puzzles/fire_fighter/Animation_Sequences/puzzle_fireFighter.png
+- Assets/animations/puzzle game/puzzles/safari/Animation_Sequences/puzzle_safari.png
+- Assets/animations/puzzle game/puzzles/underwater/Animation_Sequences/puzzle_underwater.png
+- Assets/animations/puzzle game/Yancy/Animation_Sequences/yancyComplete.png
+- Assets/animations/puzzle game/Yancy/Animation_Sequences/yancyCorrect.png
+- Assets/animations/puzzle game/Yancy/Animation_Sequences/yancyWrong.png
+- Assets/animations/shapes game/Shapes/shapes.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 normalmapFileNames:
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png

@@ -12,27 +12,51 @@ public class ShapesGame : MonoBehaviour
 
 	private int MAX_ROUNDS = 5;
 	private int MAX_CORRECT_ANSWERS = 3;
-	private Vector3 CURRENT_CA_SHAPE_POSITION = new Vector3 (0.8f, 3.38f, 0);
+	private Vector3 CURRENT_CA_SHAPE_POSITION = new Vector3 (1.6f, 3.88f, 0);
 
 	private int numberOfCorrectShapes;
 	private int correctShapeCount;
 	private int caShapeIndex;
 	private bool isRoundOver;
+	private bool areShapesActive;
 	private Sprite caSprite;
 	private ShapeBehavior[] shapeSprites;
 	private ShapeBehavior[] shapeSpriteTypes;
 
-	public GameObject[] shapes;
+	//public GameObject[] shapes;
+	public GameObject[] blueShapes;
+	public GameObject[] greenShapes;
+	public GameObject[] redShapes;
+	public GameObject[] orangeShapes;
+	public GameObject[] yellowShapes;
 	List<Vector3> shapePositions;
 
 	public GameObject kaycee;
 	public LevelManager levelManager;
 
 	private int roundNum = 0;
+	private int numberOfShapeTypes = 8;
+	List<GameObject[]> shapeColorSets;
+	//private GameObject[][] shapeColorSets;
 
+	public enum gameType
+	{
+		randomShapes = 0,
+		numberShapes
+	}
 
 	void Start ()
 	{
+
+		shapeColorSets = new List<GameObject[]> ();
+		shapeColorSets.Add (blueShapes);
+		shapeColorSets.Add (greenShapes);
+		shapeColorSets.Add (redShapes);
+		shapeColorSets.Add (yellowShapes);
+		shapeColorSets.Add (orangeShapes);
+		for (int i = 0; i < 8; i++) {
+			//shapeColorSets[]
+		}
 		initLevel ();	
 	}
 
@@ -50,14 +74,14 @@ public class ShapesGame : MonoBehaviour
 		//ShuffleArray (shapeSprites);
 
 		shapePositions = new List<Vector3> ();
-		shapePositions.Add (new Vector3 (3.24f, 4f, 0));
-		shapePositions.Add (new Vector3 (4.86f, 4f, 0));
-		shapePositions.Add (new Vector3 (6.54f, 4f, 0));
-		shapePositions.Add (new Vector3 (8.27f, 4f, 0));
-		shapePositions.Add (new Vector3 (3.24f, 2.34f, 0));
-		shapePositions.Add (new Vector3 (4.86f, 2.34f, 0));
-		shapePositions.Add (new Vector3 (6.54f, 2.34f, 0));
-		shapePositions.Add (new Vector3 (8.27f, 2.34f, 0));
+		shapePositions.Add (new Vector3 (3.74f, 4.5f, 0));
+		shapePositions.Add (new Vector3 (4.86f, 4.5f, 0));
+		shapePositions.Add (new Vector3 (6.04f, 4.5f, 0));
+		shapePositions.Add (new Vector3 (7.27f, 4.5f, 0));
+		shapePositions.Add (new Vector3 (3.74f, 3.34f, 0));
+		shapePositions.Add (new Vector3 (4.86f, 3.34f, 0));
+		shapePositions.Add (new Vector3 (6.04f, 3.34f, 0));
+		shapePositions.Add (new Vector3 (7.27f, 3.34f, 0));
 
 		initRound ();
 	}
@@ -68,8 +92,11 @@ public class ShapesGame : MonoBehaviour
 		numberOfCorrectShapes = 3; //Random.Range (0, MAX_CORRECT_ANSWERS);
 		correctShapeCount = 0;
 		isRoundOver = false;
+		areShapesActive = true;
 
-		GameObject[] tempShapes = shapes;
+		//GameObject[] tempShapes = shapes;
+		GameObject[] tempShapes = getShapeSet (gameType.randomShapes);//  yellowShapes;
+
 
 		ShuffleArray (tempShapes);
 		int caShapeNum = 0;
@@ -88,7 +115,7 @@ public class ShapesGame : MonoBehaviour
 			newShapes.Add (tempShapes [i]);
 		}
 
-		// Randomize ane place the shapes
+		// Randomize and place the shapes
 		shapePositions = ShuffleList (shapePositions);
 		for (int j = 0; j < newShapes.Count; j++) {
 			StartCoroutine (OnPlaceShape (newShapes, j, Random.Range (0.4f, 1.2f)));
@@ -96,6 +123,7 @@ public class ShapesGame : MonoBehaviour
 
 		// Show the current CA Shape CURRENT_CA_SHAPE_POSITION
 		GameObject CA = Instantiate (tempShapes [caShapeNum], CURRENT_CA_SHAPE_POSITION, Quaternion.identity) as GameObject;
+		CA.GetComponent<ShapeBehavior> ().InitShape (tempShapes [caShapeNum]);
 		ShapeBehavior nShape = CA.GetComponent<ShapeBehavior> ();
 		nShape.SetCurrentCAShape (true);
 	}
@@ -103,18 +131,21 @@ public class ShapesGame : MonoBehaviour
 	IEnumerator OnPlaceShape (List<GameObject> newShapes, int num, float delayTime)
 	{
 		yield return new WaitForSeconds (delayTime);
-		Instantiate (newShapes [num], shapePositions [num], Quaternion.identity);
+		GameObject obj = Instantiate (newShapes [0], shapePositions [num], Quaternion.identity);
+		obj.GetComponent<ShapeBehavior> ().InitShape (newShapes [num]);
+
 	}
 
 	public void OnShapeClicked (SpriteRenderer clickSprite, GameObject obj)
 	{
 		Animator anim = obj.GetComponentInChildren<Animator> ();
+		obj.GetComponentInChildren<ShapeBehavior> ().isShapeActive = false;
 		if (clickSprite.sprite == caSprite) {
 			
 			//anim.SetTrigger ("incorrect");
 			HandleCorrectShape (anim);
 			KayceeCA ();
-		} else {
+		} else if (areShapesActive) {
 			HandleIncorrectShape (anim);
 			KayceeWA ();
 
@@ -133,7 +164,6 @@ public class ShapesGame : MonoBehaviour
 		}
 
 		if (correctShapeCount == numberOfCorrectShapes && !isRoundOver) {
-			Debug.Log ("\n YOU GOT ALL THE SHAPES");
 			isRoundOver = true;
 			// figure out how many shapes are left and get rid of them
 			Invoke ("RemoveRemainingShapes", 1.0f);
@@ -183,15 +213,12 @@ public class ShapesGame : MonoBehaviour
 		levelManager.LoadLevel ("02 Home");
 	}
 
-	private void test ()
-	{
-		GameObject[] whatsLeft = GameObject.FindGameObjectsWithTag ("Shape");
-		Debug.Log ("\n what's left " + whatsLeft.Length);
-	}
-
 	private void HandleCorrectShape (Animator anim)
 	{
 		correctShapeCount++;
+		if (correctShapeCount == numberOfCorrectShapes) {
+			areShapesActive = false;
+		}
 		anim.SetTrigger ("startOutro");
 	}
 
@@ -219,6 +246,51 @@ public class ShapesGame : MonoBehaviour
 		anim.SetTrigger ("startGameComplete");
 	}
 
+
+
+	/*
+	 * *******************************************************************************************
+	 * 
+	 *  							Shape Sorting section
+	 * 
+	 * *******************************************************************************************
+	 */
+
+	private GameObject[] getShapeSet (gameType typeOfGame)
+	{
+		GameObject[] shapeSet;
+		/*
+		if (typeOfGame == gameType.numberShapes) {
+			shapeSet = getRandomShapes ();
+		}
+*/
+		Debug.Log ("\n ******************** getShapeSet " + typeOfGame);
+		switch (typeOfGame) {
+		case gameType.randomShapes:
+			shapeSet = getRandomShapes ();
+			break;
+		default:
+			shapeSet = getRandomShapes ();
+			break;
+		}
+		return shapeSet;
+	}
+
+	private GameObject[] getRandomShapes ()
+	{
+		List<GameObject> randomShapes = new List<GameObject> ();
+		for (int i = 0; i < numberOfShapeTypes; i++) {
+			int ranNum = Random.Range (0, shapeColorSets.Count);
+			randomShapes.Add (shapeColorSets [ranNum] [i]);
+		}
+		GameObject[] r = new GameObject[numberOfShapeTypes];
+		for (int j = 0; j < numberOfShapeTypes; j++) {
+			r [j] = randomShapes [j];
+		}
+		Debug.Log ("HOW MANY SHAPES " + randomShapes.Count);
+		return r;
+	}
+
 	public static void ShuffleArray<T> (T[] arr)
 	{
 		for (int i = arr.Length - 1; i > 0; i--) {
@@ -232,15 +304,12 @@ public class ShapesGame : MonoBehaviour
 	private List<E> ShuffleList<E> (List<E> inputList)
 	{
 		List<E> randomList = new List<E> ();
-
-		//Random r = new Random ();
 		int randomIndex = 0;
 		while (inputList.Count > 0) {
 			randomIndex = ran.Next (0, inputList.Count); //Choose a random object in the list
 			randomList.Add (inputList [randomIndex]); //add it to the new, random list
 			inputList.RemoveAt (randomIndex); //remove to avoid duplicates
 		}
-
 		return randomList; //return the new random list
 	}
 

@@ -7,11 +7,32 @@ public class ShapeBehavior : MonoBehaviour
 	//public static event ClickAction mouseUp;
 
 	private bool isCurrentCAShape = false;
+	private GameObject shape;
+	private Animator anim;
+	public bool isShapeActive;
 
 	// Use this for initialization
 	void Start ()
 	{
-	
+		isShapeActive = true;
+	}
+
+	public void InitShape (GameObject s)
+	{
+		anim = GetComponentInChildren<Animator> ();
+		shape = s;
+	}
+
+	void LateUpdate ()
+	{
+
+		 
+
+		if (anim && shape) {
+			//GetComponent<SpriteRenderer> ().sprite = shape.GetComponent<SpriteRenderer> ().sprite;
+			anim.GetComponent<SpriteRenderer> ().sprite = shape.GetComponent<SpriteRenderer> ().sprite;
+		}
+
 	}
 	
 	// Update is called once per frame
@@ -25,7 +46,7 @@ public class ShapeBehavior : MonoBehaviour
 
 		if (isCurrentCAShape) {
 			Debug.Log ("This is The current shape");
-		} else {
+		} else if (isShapeActive) {
 			ShapesGame shapeGame = GameObject.FindObjectOfType<ShapesGame> ();
 			shapeGame.OnShapeClicked (this.GetComponentInChildren<SpriteRenderer> (), gameObject);	
 		}
@@ -44,11 +65,15 @@ public class ShapeBehavior : MonoBehaviour
 			ShapesGame shapesGame = GameObject.FindObjectOfType<ShapesGame> ();
 			shapesGame.OutroDone (gameObject);
 		} else {
-
 			ShapesGame shapesGame = GameObject.FindObjectOfType<ShapesGame> ();
 			shapesGame.OutroDone (gameObject);	
 		}
 
+	}
+
+	public void IncorrectDone ()
+	{
+		isShapeActive = true;
 	}
 
 	public void SetCurrentCAShape (bool bol)
